@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="reunionTour">
+	<head>
+		<title>Reunion Tour</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	</head>
+	<body>
+		<ul class="nav nav-pills">
+			<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+			<li ui-sref-active="active"><a ui-sref="hotel">Hotel</a></li>
+			<li ui-sref-active="active"><a ui-sref="games">Games</a></li>
+			<li ui-sref-active="active"><a ui-sref="rsvp">RSVP</a></li>
+			<li ui-sref-active="active"><a ui-sref="archives">2014</a></li>
+		</ul>
+
+		<p>{{message}}</p>
+
+		<div class="container">
+			
+			<div ui-view></div>
+		</div>
+
+	<script src="app.js"></script>
+	</body>
+</html>
