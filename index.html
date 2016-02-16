@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="reunionTour">
-	<head>
-		<title>Reunion Tour</title>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<script src="bower_components/angular/angular.js"></script>
-		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-	</head>
-	<body>
-		<ul class="nav nav-pills">
-			<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-			<li ui-sref-active="active"><a ui-sref="hotel">Hotel</a></li>
-			<li ui-sref-active="active"><a ui-sref="games">Games</a></li>
-			<li ui-sref-active="active"><a ui-sref="rsvp">RSVP</a></li>
-			<li ui-sref-active="active"><a ui-sref="archives">2014</a></li>
-		</ul>
+<head>
+	<title>Reunion Tour</title>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
 
-		<p>{{message}}</p>
-
-		<div class="container">
-			
-			<div ui-view></div>
+	<nav>
+		<div class="nav-wrapper">
+			<a ui-sref="home" class="brand-logo right">Family Reunion 2016</a>
+			<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+				<li ui-sref-active="active"><a ui-sref="stay">Stay</a></li>
+				<li ui-sref-active="active"><a ui-sref="fun">Fun</a></li>
+				<li ui-sref-active="active"><a ui-sref="rsvp">RSVP</a></li>
+			</ul>
 		</div>
+	</nav>
+
+	<p>{{message}}</p>
+
+	<div class="container">
+
+		<div ui-view></div>
+	</div>
 
 	<script src="app.js"></script>
-	</body>
+</body>
 </html>

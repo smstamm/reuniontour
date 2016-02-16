@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('http://domain.com/fonts/font.ttf'); /*URL to font*/
+}
+
+a {
+	cursor: pointer;
+}
+
+p {
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*max-width: 600px;*/
+}
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #006cc5;
+}
+
+nav {
+  color: #fff;
+  background-color: #006cc5;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
+.card-image img {
+	/*max-width: 300px;*/
+	max-height: 125px;
+}
+.card {
+	max-width: 300px;
+}
+
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+  max-height: 60%;
+  overflow: scroll;
+}
+
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+  max-height: 40%;
+  overflow: scroll;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #006cc5;
+  margin-right: 20px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #006cc5;
+  margin-right: 20px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}

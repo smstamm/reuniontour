@@ -14,18 +14,18 @@ reunionTour.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: 'modules/home/home.html'
 	})
 
-	.state('games', {
-		url: '/games',
-		templateUrl: 'modules/games/games.html'
+	.state('fun', {
+		url: '/fun',
+		templateUrl: 'modules/fun/fun.html'
 	})
 
-	.state('hotel', {
-		url: '/hotel',
-		templateUrl: 'modules/hotel/hotel'
+	.state('stay', {
+		url: '/stay',
+		templateUrl: 'modules/stay/stay.html'
 	})
 
 	.state('rsvp', {
 		url: '/rsvp',
-		templateUrl: 'modules/rsvp/rsvp'
+		templateUrl: 'modules/rsvp/rsvp.html'
 	})
 });
