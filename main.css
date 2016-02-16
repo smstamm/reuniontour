@@ -1,6 +1,5 @@
-@font-face {
+body {
     font-family: 'Roboto', sans-serif;
-    src: url('http://domain.com/fonts/font.ttf'); /*URL to font*/
 }
 
 a {
@@ -11,7 +10,10 @@ p {
   white-space: pre-wrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /*max-width: 600px;*/
+}
+
+img {
+  margin: auto;
 }
 
 footer.page-footer {
@@ -58,4 +60,9 @@ nav {
   margin-right: 20px;
   transition: color .3s ease;
   text-transform: uppercase;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #006cc5;
+  opacity: .5;
 }

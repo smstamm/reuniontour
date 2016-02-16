@@ -24,8 +24,8 @@ reunionTour.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: 'modules/stay/stay.html'
 	})
 
-	.state('rsvp', {
-		url: '/rsvp',
-		templateUrl: 'modules/rsvp/rsvp.html'
-	})
+	// .state('rsvp', {
+	// 	url: 'https://www.facebook.com/events/484212628450354/',
+	// 	external: true
+	// })
 });
